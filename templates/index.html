@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  </head>
+  <body>
+    <br></br>
+    <section class="columns is-mobile is-centered">
+      <form action="/" method="POST">
+        <div class="field">
+          <label class="label">Enter required password Length:</label>
+          <div class="control has-icons-left has-icons-right">
+            <input name="passCount" class="input is-rounded" type="number" required>
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <br></br>
+          <label class="label">Generated password:</label>
+          <div class="control has-icons-left has-icons-right">
+            <input name="passCount" class="input is-rounded" type="text" value="{{genPass}}" readonly>
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+        <br></br>
+        <div class="columns is-mobile is-centered">
+          <button name="submit" class="button is-centered is-primary is-rounded">Generate</button>
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Created By <strong><a href="https://about.me/ahmed-mohsen" target="_blank">Ahmed Mohsen</a></strong> with Python, Flask, Bulma by <a href="https://jgthms.com">Jeremy Thomas</a>. This project content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
